@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('latar.jpg');
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  header h1 {
+    color: #ffffff;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    transition: width 0.2s ease;
+  }
+  
+  nav a:hover::after {
+    width: 100%; 
+  }
+  
+  
+  .intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  .profile-pic {
+    background: url('paimon2.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(188, 188, 188);
+  }
+
+  .info {
+    margin-left: 30px;
+    text-align: left;
+  }
+  
+  .info h2 {
+    font-size: 2.5em;
+  }
+  
+  .info p {
+    margin: 20px 0;
+    color: #ffffff;
+    max-width: 400px;
+  }
+  
+  .social-icons a {
+    color: #f25c5c;
+    font-size: 1.5em;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  .hire-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #f4f4f4;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hire-btn:hover {
+    background-color: #67b2f8;
+    color: #ffffff;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+  }
+
+  .social-media a {
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+
+  .social-media a:hover {
+    background-color: #3d98ff; 
+    transform: scale(1.1); 
+  }

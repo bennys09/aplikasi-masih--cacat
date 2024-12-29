@@ -1,0 +1,45 @@
+  
+.kmbli-btn {
+  padding: 10px 20px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #f7f7f7;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.kmbli-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.sub-class {
+    font-family: monospace;
+    font-size: 1.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(20, end), blink 0,5s step-end infinite alternate;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 45ch;
+    }
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+  }

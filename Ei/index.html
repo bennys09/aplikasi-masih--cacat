@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paimon Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Paimon Travel</h1>
+        <form id="formPemesanan" action="proses.php" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" required>
+
+            <label for="tujuan">Tujuan:</label>
+            <select id="tujuan" name="tujuan" required onchange="hitungHarga()">
+                <option value="">Pilih Tujuan</option>
+                <option value="Tungkal">Tungkal - Rp 100,000</option>
+                <option value="Singkut">Singkut - Rp 150,000</option>
+                <option value="Tebing-tinggi">Tebing-tinggi - Rp 80,000</option>
+                <option value="Hokaido">Hokaido - Rp 4,250,000</option>
+            </select>
+
+            <label for="tanggal">Tanggal Keberangkatan:</label>
+            <input type="date" id="tanggal" name="tanggal" required>
+
+            <label for="penumpang">Jumlah Penumpang:</label>
+            <input type="number" id="penumpang" name="penumpang" min="1" required onchange="hitungHarga()">
+
+            <div class="harga">
+                <p>Total Harga: <span id="totalHarga">Rp 0</span></p>
+            </div>
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </div>  
+    <script src="script2.js"></script>
+</body>
+</html>
